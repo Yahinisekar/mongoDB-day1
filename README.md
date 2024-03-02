@@ -1,5 +1,7 @@
 # MongoDB Day 1
 
+`This repository contains word document.you need to download it to view`
+
 ## Queries
 
 1. **🔍 Find all the information about each product:**
