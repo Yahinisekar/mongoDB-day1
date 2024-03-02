@@ -3,19 +3,19 @@
 ## Queries
 
 1. **🔍 Find all the information about each product:**
-   ```
+ ```
    db.products.find({})
-   ```
+  ```
 2.**💰 Find the product price which are between 400 to 800:**
-   ```
-   db.products.find({ 'product_price': { $gte: 400, $lte: 800 } })
-   ```
-3. **❌ Find the product price which are not between 400 to 600:**
-   ```
+```
+  db.products.find({ 'product_price': { $gte: 400, $lte: 800 } })
+ ```
+3.**❌ Find the product price which are not between 400 to 600:**
+```
    db.products.find({‘product_price’:{$not:{$gte:400,$lte:600}});
-   ```
+```
 
-4. **📈 List the four products which are greater than 500 in price:**
+4.**📈 List the four products which are greater than 500 in price:**
 
    ```
    db.products.find({ 'product_price': { $gt: 500 } }).limit(4)
