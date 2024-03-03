@@ -28,11 +28,11 @@
   ```
 6.**🔍 Find the product with a row id of 10:**
   ```
-   db.products.find({ 'id': '10' })
+   db.products.find().skip(9).limit(1);
   ```
 7.**📝 Find only the product name and product material:**
 ```
- db.products.find({},{'id':0,'product_name':0,'product_price':0});
+ db.products.find({},{'id':0,'product_color':0,'product_price':0});
 ```
 
 8.**🔍 Find all products which contain the value "soft" in product material:**
